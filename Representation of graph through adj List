@@ -1,0 +1,47 @@
+public class Graph{
+LinkedList<Integer>[]adj;
+private int V;
+private int E;
+public Graph(int nodes){
+this.V=nodes;
+this.adj=new LinkedList[nodes];
+for(int v=0;i<V;v++){
+this.adj[v]=newLinkedList<>();
+}
+}
+
+public void addEdge(int u,int v){
+adj[u].add(v);
+adj[v].add(u);
+E++;
+}
+public String toString(){
+StringBuilder sb=new StringBuilder();
+sb.append(V+" Vertices"+E+" Edges);
+for(int v=0;v<V;v++){
+ab.append(v+": ");
+for(int w: adjMatrix[v]){
+sb.append(w+" ");
+}
+sb.append("\n");
+}
+return sb.toString();
+
+}
+
+public static void main(String[]args){
+Grapg g=new Grah(4):
+g.addEdge(0,1);
+g.addEdge(1,2);
+g.addEdge(2,3);
+g.addEdge(3,0);
+System.out.println(g.toStrig());
+}
+
+
+
+
+
+
+}
+//If m is the number of edges in a graph, then the time complexity of building such a list is  O(m). The space complexity is O(n + m)
