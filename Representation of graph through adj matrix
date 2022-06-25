@@ -34,3 +34,5 @@ g.addEdge(3,0);
 System.out.println(g.toStrig());
 }
 }
+
+//Assuming the graph has n vertices, the time complexity to build such a matrix is O(n^2). The space complexity is also O(n^2)
