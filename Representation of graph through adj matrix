@@ -1,0 +1,36 @@
+public class Graph{
+private int V; //Number of vertices
+private int E;   //Number of edge
+private int[][] adjMatrix;
+public Grapg(int nodes){
+this.V=nodes;
+this.adjMatrix=new adjMatrix[nodes][nodes]; 
+
+}
+public void addEdge(int u,int v){
+adjMatrix[u][v];
+adjMtarix[v][u];   //because of undirected graph
+E++;
+}
+public String toString(){
+StringBuilder sb=new StringBuilder();
+sb.append(V+" Vertices"+E+" Edges);
+for(int v=0;v<V;v++){
+ab.append(v+": ");
+for(int w: adjMatrix[v]){
+sb.append(w+" ");
+}
+sb.append("\n");
+}
+return sb.toString();
+
+}
+public static void main(String[]args){
+Graph g=new Graph(4);
+g.addEdge(0,1);
+g.addEdge(1,2);
+g.addEdge(2,3);
+g.addEdge(3,0);
+System.out.println(g.toStrig());
+}
+}
